@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import javax.persistence.*;
 
-import org.springframework.web.multipart.MultipartFile;
+
 
 @Entity
 public class Producto implements Comparable<Producto>, Serializable{ 
@@ -35,8 +35,7 @@ public class Producto implements Comparable<Producto>, Serializable{
 
 	private Float precio;
 
-@Transient
-	private MultipartFile imagenproducto;
+
 
 	private String nombreimagen;
 
@@ -85,12 +84,7 @@ public Producto() {}
 		this.categoria = categoria;
 	}
 
-	public MultipartFile getImagenproducto() {
-		return imagenproducto;
-	}
-	public void setImagenproducto(MultipartFile imagenproducto) {
-		this.imagenproducto = imagenproducto;
-	}
+
 	public String getNombreimagen() {
 		return nombreimagen;
 	}

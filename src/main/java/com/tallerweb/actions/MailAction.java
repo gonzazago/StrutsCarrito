@@ -34,7 +34,7 @@ public class MailAction extends ActionSupport implements ModelDriven<Mail>{
                 String mensaje = null;
         System.out.println("LLege aca");
 
-                if("".equals(mail.getAsunto()) || "".equals(mail.getCuerpoMail())|| "".equals(mail.getNombreContacto())){
+                if("".equals(mail.getAsuntoMail()) || "".equals(mail.getEmailMail())|| "".equals(mail.getNombreMail())){
                     System.out.printf("Ha ocurrido un error");
                     mensaje ="Debe rellenar todo los campos";
                     addActionMessage(mensaje);

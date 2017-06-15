@@ -22,10 +22,7 @@
 <body>
 
 <header id="header">
-		<jsp:include page="header.jsp"/>
-		<jsp:include page="comboRegistro.jsp"/>
-
-		<div class="header-bottom responsive">
+				<div class="header-bottom responsive">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">

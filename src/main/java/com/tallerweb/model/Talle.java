@@ -16,7 +16,7 @@ public class Talle implements Serializable{
 	private String talle;
 	
 	@OneToMany (mappedBy="talle", cascade=CascadeType.ALL)
-	private List <Producto> productos = new ArrayList <> ();
+	private List <Producto> productos = new ArrayList <Producto> ();
 	
 	public Talle(String talle) {
 		this.talle=talle;

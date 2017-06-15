@@ -4,19 +4,19 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.*;
 
-
-
+@Entity
 public class Categoria implements Serializable{
 
 
 	private static final long serialVersionUID = 1L;
 
-
+	@Id
 	private String categoria;
 	
-
-
+	@OneToMany (mappedBy="categoria", cascade=CascadeType.ALL)
+	private List <Producto> productos = new ArrayList <Producto> ();
 	
 	public Categoria(String categoria) {
 		this.categoria=categoria;

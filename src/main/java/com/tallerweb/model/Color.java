@@ -6,17 +6,17 @@ import java.util.List;
 
 import javax.persistence.*;
 
-
+@Entity
 public class Color implements Serializable{
 
 
 	private static final long serialVersionUID = 1L;
 
-
+	@Id
 	private String color;
 	
-
-
+	@OneToMany (mappedBy="color", cascade=CascadeType.ALL)
+	private List <Producto> productos = new ArrayList <Producto> ();
 	
 	public Color(String color) {
 		this.color=color;

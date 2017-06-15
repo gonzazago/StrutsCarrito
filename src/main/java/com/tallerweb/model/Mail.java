@@ -1,43 +1,45 @@
 package com.tallerweb.model;
 
-/**
- * Created by gonza on 6/6/2017.
- */
 public class Mail {
-    private String cuerpoMail;
-    private String asunto;
-    private String nombreContacto;
 
+	private String nombreMail;
+	private String emailMail;
+	private String asuntoMail;
+	private String textoMail;
+	
+	public Mail(){}
+	
+	//Getters y Setters
+	public String getNombreMail() {
+		return nombreMail;
+	}
 
-    public Mail(){
+	public void setNombreMail(String nombreMail) {
+		this.nombreMail = nombreMail;
+	}
 
-    }
+	public String getEmailMail() {
+		return emailMail;
+	}
 
-    public String getCuerpoMail() {
-        return cuerpoMail;
-    }
+	public void setEmailMail(String emailMail) {
+		this.emailMail = emailMail;
+	}
 
+	public String getAsuntoMail() {
+		return asuntoMail;
+	}
 
-    public String getAsunto() {
-        return asunto;
-    }
+	public void setAsuntoMail(String asuntoMail) {
+		this.asuntoMail = asuntoMail;
+	}
 
-    public String getNombreContacto() {
-        return nombreContacto;
-    }
+	public String getTextoMail() {
+		return textoMail;
+	}
 
-    public void setAsunto(String asunto) {
-        this.asunto = asunto;
-    }
-
-    public void setCuerpoMail(String cuerpoMail) {
-            this.cuerpoMail = cuerpoMail;
-    }
-
-
-
-    public void setNombreContacto(String nombreContacto) {
-        this.nombreContacto = nombreContacto;
-    }
-
+	public void setTextoMail(String textoMail) {
+		this.textoMail = textoMail;
+	}
+	
 }
